@@ -20,6 +20,7 @@ public class EventManager {
     }
 
     private void createAndStoreEvent(String title, Date theDate) {
+    	
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         session.beginTransaction();
 

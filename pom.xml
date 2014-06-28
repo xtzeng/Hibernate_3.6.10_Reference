@@ -35,6 +35,12 @@
 	<version>3.12.0.GA</version>
 </dependency>
     
+       <dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.21</version>
+	</dependency>
+	
   </dependencies>
   <build>
     <finalName>Hibernate_3.6.10_Reference</finalName>
