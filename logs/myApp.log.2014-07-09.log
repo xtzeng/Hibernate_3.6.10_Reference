@@ -21,3 +21,54 @@
 2014-07-09 22:24:50.144 [23387093@qtp-25310701-1] INFO  com.trail.neutral.dao.HelloDao - save...
 2014-07-09 22:24:50.146 [23387093@qtp-25310701-1] INFO  com.trail.neutral.service.HelloService - hello this is in service
 2014-07-09 22:24:50.146 [23387093@qtp-25310701-1] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
+2014-07-09 23:37:42.830 [1683934@qtp-25310701-0] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        cats
+        (name) 
+    values
+        (?)
+2014-07-09 23:37:42.930 [1683934@qtp-25310701-0] INFO  com.trail.neutral.dao.HelloDao - save...
+2014-07-09 23:37:42.932 [1683934@qtp-25310701-0] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        cats
+        (name) 
+    values
+        (?)
+2014-07-09 23:37:42.948 [1683934@qtp-25310701-0] INFO  com.trail.neutral.service.HelloService - hello this is in service
+2014-07-09 23:37:42.948 [1683934@qtp-25310701-0] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
+2014-07-09 23:45:30.294 [15493888@qtp-27427682-0] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        cats
+        (name) 
+    values
+        (?)
+2014-07-09 23:45:30.364 [15493888@qtp-27427682-0] INFO  com.trail.neutral.dao.HelloDao - save...
+2014-07-09 23:45:30.366 [15493888@qtp-27427682-0] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        cats
+        (name) 
+    values
+        (?)
+2014-07-09 23:45:30.388 [15493888@qtp-27427682-0] INFO  com.trail.neutral.service.HelloService - hello this is in service
+2014-07-09 23:45:30.389 [15493888@qtp-27427682-0] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
+2014-07-09 23:47:46.400 [6278953@qtp-10217370-0] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        cats
+        (name) 
+    values
+        (?)
+2014-07-09 23:47:46.463 [6278953@qtp-10217370-0] INFO  com.trail.neutral.dao.HelloDao - save...
+2014-07-09 23:47:46.465 [6278953@qtp-10217370-0] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        cats
+        (name) 
+    values
+        (?)
+2014-07-09 23:47:46.489 [6278953@qtp-10217370-0] INFO  com.trail.neutral.service.HelloService - hello this is in service
+2014-07-09 23:47:46.490 [6278953@qtp-10217370-0] INFO  com.trail.neutral.action.HelloAction - hello,this is a test

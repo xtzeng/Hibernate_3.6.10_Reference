@@ -27,6 +27,7 @@ public class HelloAction extends BaseAction{
 	public Result test() {
 		helloService.hi();
 		logger.info("hello,this is a test");
+		
 		return dispatch("/jsp/test.jsp");
 	}
 	
