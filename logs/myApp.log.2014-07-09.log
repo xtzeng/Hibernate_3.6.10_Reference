@@ -11,3 +11,13 @@
 2014-07-09 16:59:14.375 [1152907@qtp-1683934-1] INFO  com.trail.neutral.dao.HelloDao - save...
 2014-07-09 16:59:14.375 [1152907@qtp-1683934-1] INFO  com.trail.neutral.service.HelloService - hello this is in service
 2014-07-09 16:59:14.375 [1152907@qtp-1683934-1] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
+2014-07-09 22:24:50.033 [23387093@qtp-25310701-1] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        cats
+        (name) 
+    values
+        (?)
+2014-07-09 22:24:50.144 [23387093@qtp-25310701-1] INFO  com.trail.neutral.dao.HelloDao - save...
+2014-07-09 22:24:50.146 [23387093@qtp-25310701-1] INFO  com.trail.neutral.service.HelloService - hello this is in service
+2014-07-09 22:24:50.146 [23387093@qtp-25310701-1] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
