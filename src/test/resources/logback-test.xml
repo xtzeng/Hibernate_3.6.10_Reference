@@ -26,11 +26,11 @@
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<!-- 可以是相对路径，也可以是决定路径 -->
-		<file>E:/log/j5-core/test.log</file>
+		<file>E:/log/test.log</file>
  
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- 可以是相对路径，也可以是决定路径 -->
-			<fileNamePattern>E:/log/j5-core/test-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<fileNamePattern>E:/log/test-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 			<maxHistory>30</maxHistory>
 
 			<timeBasedFileNamingAndTriggeringPolicy
@@ -57,9 +57,7 @@
 	<logger name="org" level="ERROR" />
 	<logger name="net" level="ERROR" />
 	
-	<logger name="com.mchange" level="DEBUG" />
-	<logger name="com.j5.component.DatabaseSourceComponent" level="DEBUG" />
-	<logger name="com.j5.persistence.orm.utils.DBHelper" level="WARN" />
+	
 	
 	<root level="DEBUG">
 		<appender-ref ref="STDOUT" />
