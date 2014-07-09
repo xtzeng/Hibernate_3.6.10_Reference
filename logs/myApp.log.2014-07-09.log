@@ -5,3 +5,9 @@
 2014-07-09 16:40:52.812 [1152907@qtp-1683934-1] INFO  com.trail.neutral.dao.HelloDao - save...
 2014-07-09 16:41:00.640 [1152907@qtp-1683934-1] INFO  com.trail.neutral.service.HelloService - hello this is in service
 2014-07-09 16:41:03.234 [1152907@qtp-1683934-1] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
+2014-07-09 16:57:57.171 [1152907@qtp-1683934-1] INFO  com.trail.neutral.dao.HelloDao - save...
+2014-07-09 16:58:00.781 [1152907@qtp-1683934-1] INFO  com.trail.neutral.service.HelloService - hello this is in service
+2014-07-09 16:58:00.781 [1152907@qtp-1683934-1] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
+2014-07-09 16:59:14.375 [1152907@qtp-1683934-1] INFO  com.trail.neutral.dao.HelloDao - save...
+2014-07-09 16:59:14.375 [1152907@qtp-1683934-1] INFO  com.trail.neutral.service.HelloService - hello this is in service
+2014-07-09 16:59:14.375 [1152907@qtp-1683934-1] INFO  com.trail.neutral.action.HelloAction - hello,this is a test
