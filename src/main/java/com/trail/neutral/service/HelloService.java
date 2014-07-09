@@ -1,5 +1,7 @@
 package com.trail.neutral.service;
 
+import java.util.Date;
+
 import javax.annotation.Resource;
 
 import org.slf4j.Logger;
@@ -26,6 +28,7 @@ public class HelloService {
 		helloDao.save();
 		Cat cat = new Cat();
 		cat.setName("秘密");
+		cat.setAddTime(new Date());
 		testDao.getHibernateTemplate().save(cat);
 		logger.info("hello this is in service");
 	}

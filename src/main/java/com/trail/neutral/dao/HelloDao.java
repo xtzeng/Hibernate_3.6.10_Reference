@@ -1,6 +1,8 @@
 package com.trail.neutral.dao;
 
 
+import java.util.Date;
+
 import javax.annotation.Resource;
 
 import org.slf4j.Logger;
@@ -24,6 +26,7 @@ public class HelloDao {
 		
 		Cat cat = new Cat();
 		cat.setName("喵喵");
+		cat.setAddTime(new Date());
 		this.hibernateTemplate.save(cat);
 		logger.info("save...");
 	}
