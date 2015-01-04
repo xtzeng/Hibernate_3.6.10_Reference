@@ -4,7 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-    <servlet>
+  <!--   <servlet>
         <servlet-name>Event Manager</servlet-name>
         <servlet-class>org.hibernate.tutorial.web.EventManagerServlet</servlet-class>
     </servlet>
@@ -12,7 +12,7 @@
     <servlet-mapping>
         <servlet-name>Event Manager</servlet-name>
         <url-pattern>/eventmanager</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping> -->
     
     <context-param>
 		<param-name>contextConfigLocation</param-name>
