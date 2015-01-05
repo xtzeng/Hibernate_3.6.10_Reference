@@ -7,17 +7,14 @@ import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 import com.leadtone.ibatis.dao.IUserDao;
 import com.leadtone.ibatis.domain.User;
 
+
 public class UserDaoImpl extends SqlMapClientDaoSupport implements IUserDao {
 
+	
+	//继承UserDao跟继承SqlMapClientDaoSupport是一样的，因为也UserDao也继承了SqlMapClientDaoSupport
 	//注意这里的SqlMapClient接口的声明和下面的static静态代码都不需要了，
-
-
-
-                // 因为这里继承了spring提供的ibatis模板template类SqlMapClientDaoSupport，不是用原生的SqlMapClient
-
-
-                
-                 //private static SqlMapClient sqlMapClient=null;
+    // 因为这里继承了spring提供的ibatis模板template类SqlMapClientDaoSupport，不是用原生的SqlMapClient
+    //private static SqlMapClient sqlMapClient=null;
 	/*
 	static{
 		Reader reader=null;
