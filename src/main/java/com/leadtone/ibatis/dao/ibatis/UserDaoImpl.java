@@ -3,12 +3,14 @@ package com.leadtone.ibatis.dao.ibatis;
 import java.util.List;
 
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
+import org.springframework.stereotype.Repository;
 
 import com.leadtone.ibatis.dao.IUserDao;
+import com.leadtone.ibatis.dao.base.BaseDao2;
 import com.leadtone.ibatis.domain.User;
 
-
-public class UserDaoImpl extends SqlMapClientDaoSupport implements IUserDao {
+@Repository("userDaoImpl")
+public class UserDaoImpl extends BaseDao2 implements IUserDao {
 
 	
 	//继承UserDao跟继承SqlMapClientDaoSupport是一样的，因为也UserDao也继承了SqlMapClientDaoSupport
