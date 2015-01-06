@@ -2,41 +2,27 @@ package com.trail.neutral.po;
 
 public class Woman {
 
-	private String name;
 	private Integer age;
-	
-	private String address;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	private String name;
+	private String Address;
 	public Integer getAge() {
 		return age;
 	}
-
 	public void setAge(Integer age) {
 		this.age = age;
 	}
-
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getAddress() {
-		return address;
+		return Address;
 	}
-
 	public void setAddress(String address) {
-		this.address = address;
+		Address = address;
 	}
-
-	@Override
-	public String toString() {
-		return "name="+name+"&" +"age="+age +"&"+"address="+ address;
-	}
-	
-	
 	
 	
 }

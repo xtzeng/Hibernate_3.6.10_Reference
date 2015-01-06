@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+  
+<!DOCTYPE sqlMap         
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"         
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">  
+  
+<sqlMap namespace="User">  
+  
+    <typeAlias alias="user" type="com.trail.neutral.po.User"/>  
+  
+    <resultMap class="user" id="UserResult">  
+        <result property="id" column="ID"/>      
+        <result property="name" column="LOGIN_NAME"/>    
+        <result property="password" column="PASS_WORD"/>     
+        <result property="qx" column="QX"/>      
+        <result property="memo" column="MEMO"/>      
+        <result property="lastUpdateTime" column="last_update_time"/>      
+    </resultMap>  
+       
+    <!-- query all Users -->  
+    <select id="selectAllUsers" resultMap="UserResult">  
+        select * from user   
+    </select>  
+       
+    <!-- query user by id -->  
+    <select id="selectUserById" parameterClass="int" resultMap="UserResult">  
+        select ID,LOGIN_NAME,PASS_WORD,QX,MEMO from user where ID=#id#   
+    </select>  
+       
+    <!-- query user by user -->  
+    <select id="selectUserByUser2" parameterClass="map" resultMap="UserResult">  
+        select ID,LOGIN_NAME,PASS_WORD,QX,MEMO 
+        from user 
+        <dynamic prepend="where">
+        	<isNotEmpty prepend="and" property="name">
+        		LOGIN_NAME=#name#
+        	</isNotEmpty>
+        	<isNotEmpty prepend="and" property="password">
+        		PASS_WORD=#password#
+        	</isNotEmpty>
+        </dynamic>
+    </select>  
+       
+       
+    <select id="selectUserByUser" parameterClass="user" resultMap="UserResult">  
+        select ID,LOGIN_NAME,PASS_WORD,QX,MEMO 
+        from user 
+        <dynamic prepend="where">
+        	<isNotEmpty prepend="and" property="name">
+        		LOGIN_NAME=#name#
+        	</isNotEmpty>
+        	<isNotEmpty prepend="and" property="password">
+        		PASS_WORD=#password#
+        	</isNotEmpty>
+        </dynamic>
+    </select>  
+       
+    <select id="selectUsersByName" parameterClass="String" resultMap="UserResult">  
+        select ID,LOGIN_NAME,PASS_WORD,QX,MEMO 
+        from user 
+         <dynamic prepend="where">
+        	<isNotEmpty prepend="and" property="value">
+        		sname like '%$value$%'
+        	</isNotEmpty>
+        </dynamic>
+    </select>  
+    
+       
+    <update id="updateUser" parameterClass="User">  
+        update user set LOGIN_NAME=#name#,PASS_WORD=#password#,QX=#qx#,memo=#memo# where  ID=#id#   
+    </update>  
+       
+    <delete id="deleteUser" parameterClass="int">  
+        delete from user where ID=#id#   
+    </delete>  
+    
+    <delete id="addUser" parameterClass="User">  
+        insert into user(LOGIN_NAME,PASS_WORD,QX,memo,last_update_time) values (#name#,#password#,#qx#,#memo#,#lastUpdateTime#)
+    </delete> 
+  
+</sqlMap> 

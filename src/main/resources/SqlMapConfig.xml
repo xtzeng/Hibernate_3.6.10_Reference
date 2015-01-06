@@ -3,7 +3,7 @@
 PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
 "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
 <sqlMapConfig>
-  <sqlMap resource ="com/leadtone/ibatis/domain/User.xml" />
-  <sqlMap resource ="com/leadtone/ibatis/domain/Emp.xml" />
+  <sqlMap resource ="com/trail/neutral/po/User.xml" />
+  <sqlMap resource ="com/trail/neutral/po/Emp.xml" />
 </sqlMapConfig>
 

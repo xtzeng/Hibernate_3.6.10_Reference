@@ -11,8 +11,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.leadtone.ibatis.dao.ibatis.UserDaoImpl;
-import com.leadtone.ibatis.domain.User;
+import com.trail.neutral.dao.impl.UserDaoImpl;
+import com.trail.neutral.po.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:applicationContext.xml")

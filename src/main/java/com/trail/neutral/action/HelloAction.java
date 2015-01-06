@@ -7,9 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
-import com.leadtone.ibatis.service.TestService;
 import com.opensymphony.xwork2.Result;
 import com.trail.neutral.action.base.BaseAction;
+import com.trail.neutral.service.TestService;
 
 @Controller("helloAction")
 @Scope("prototype")
