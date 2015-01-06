@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import com.leadtone.ibatis.service.TestService;
 import com.opensymphony.xwork2.Result;
 import com.trail.neutral.action.base.BaseAction;
 
@@ -20,10 +21,15 @@ public class HelloAction extends BaseAction{
 	 */
 	private static final long serialVersionUID = 1L;
 
+	@Resource(name="testService")
+	private TestService testService;
+	
 	public Result test() {
 		logger.info("hello,this is a test");
-		
+		testService.tt();
 		return dispatch("/jsp/test.jsp");
 	}
+	
+	
 	
 }

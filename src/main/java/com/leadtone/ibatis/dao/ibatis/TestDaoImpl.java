@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.leadtone.ibatis.dao.base.BaseDao;
 import com.leadtone.ibatis.domain.User;
 
-@Repository("testDaoImpl")
+//@Repository("testDaoImpl")
 public class TestDaoImpl extends BaseDao<Object>{
 	
 	public void tt() {

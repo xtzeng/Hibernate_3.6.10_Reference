@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+  
+<!DOCTYPE sqlMap         
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"         
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">  
+  
+<sqlMap namespace="Emp">  
+  
+    <typeAlias alias="emp" type="com.leadtone.ibatis.domain.Emp"/>  
+  
+    <resultMap class="emp" id="empResult">  
+        <result property="empno" column="empno"/>      
+        <result property="ename" column="ename"/>    
+        <result property="job" column="job"/>     
+        <result property="mgr" column="mgr"/>      
+        <result property="hiredate" column="hiredate"/>      
+    </resultMap>  
+       
+    <!-- query all emps -->  
+    <select id="selectAllEmps" resultMap="empResult">  
+        select * from emp_copy2   
+    </select>  
+   
+  
+</sqlMap> 
