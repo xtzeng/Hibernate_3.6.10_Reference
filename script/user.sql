@@ -1,0 +1,13 @@
+CREATE TABLE `user` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`login_name` VARCHAR(15) NULL DEFAULT NULL,
+	`pass_word` VARCHAR(15) NULL DEFAULT NULL,
+	`qx` VARCHAR(10) NULL DEFAULT 'guest',
+	`memo` TEXT NULL,
+	`last_update_time` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=10
+;

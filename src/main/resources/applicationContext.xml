@@ -36,12 +36,12 @@
 	 	<property name="dataSource" ref="myDataSource" />    
 	 </bean>
 	           
-	 <bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">         
+	 <!--<bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">         
 	 	<property name="sqlMapClient" ref="sqlMapClient"/>
      </bean> 
-	
 	 <bean id="userDao" class="com.leadtone.ibatis.dao.ibatis.UserDaoImpl">
 	 	<property name="sqlMapClient" ref="sqlMapClient"></property> 
 	 </bean>
+	 -->
 	
 </beans>

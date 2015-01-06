@@ -1,5 +1,8 @@
 package com.leadtone.ibatis.dao;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 import javax.annotation.Resource;
 
 import org.junit.Test;
@@ -25,6 +28,7 @@ public class UserDaoImplTest extends AbstractJUnit4SpringContextTests{
 		user.setName("lilei");
 		user.setPassword("xxxxx");
 		user.setQx("a");
+		user.setLastUpdateTime(new Timestamp(new Date().getTime()));
 		userDaoImpl.addUser(user);
 	}
 

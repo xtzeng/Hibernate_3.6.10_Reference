@@ -74,7 +74,7 @@
     </delete>  
     
     <delete id="addUser" parameterClass="User">  
-        insert into user(LOGIN_NAME,PASS_WORD,QX,memo) values (#name#,#password#,#qx#,#memo#)
+        insert into user(LOGIN_NAME,PASS_WORD,QX,memo,last_update_time) values (#name#,#password#,#qx#,#memo#,#lastUpdateTime#)
     </delete> 
   
 </sqlMap> 

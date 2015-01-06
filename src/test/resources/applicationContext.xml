@@ -36,9 +36,9 @@
 	 	<property name="dataSource" ref="myDataSource" />    
 	 </bean>
 	           
-	 <bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">         
+	<!-- <bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">         
 	 	<property name="sqlMapClient" ref="sqlMapClient"/>
-     </bean> 
+     </bean> -->
 	 
 
 	
